@@ -12,8 +12,8 @@ $SUDO apt-get -y install git curl nano wget pwgen
 $SUDO apt-get install autoconf
 $SUDO apt-get -y install build-essential libtool automake autoconf autotools-dev autoconf pkg-config libssl-dev libgmp3-dev libevent-dev bsdmainutils libboost-all-dev libzmq3-dev libminiupnpc-dev libdb4.8-dev libdb4.8++-dev
 $SUDO apt-get -y update
-$SUDO iptables -I INPUT -p tcp --dport 32123 -j ACCEPT
-$SUDO iptables -I INPUT -p udp --dport 32123 -j ACCEPT
+$SUDO iptables -I INPUT -p tcp --dport 22123 -j ACCEPT
+$SUDO iptables -I INPUT -p udp --dport 22123 -j ACCEPT
 
 echo "Done installing";
 YOURIP=$(curl -s4 api.ipify.org)
@@ -42,22 +42,22 @@ echo "maxconnections=500"            >> /$HOME/.fundamental/fundamental.conf
 echo "daemon=1"                      >> /$HOME/.fundamental/fundamental.conf
 echo "server=1"                      >> /$HOME/.fundamental/fundamental.conf
 echo "listen=1"                      >> /$HOME/.fundamental/fundamental.conf
-echo "rpcport=32122"                 >> /$HOME/.fundamental/fundamental.conf
-echo "externalip=$YOURIP:32123"      >> /$HOME/.fundamental/fundamental.conf
+echo "rpcport=22122"                 >> /$HOME/.fundamental/fundamental.conf
+echo "externalip=$YOURIP:22123"      >> /$HOME/.fundamental/fundamental.conf
 echo "masternodeprivkey=$MNKEY"      >> /$HOME/.fundamental/fundamental.conf
 echo "masternode=1"                  >> /$HOME/.fundamental/fundamental.conf
 echo " "                             >> /$HOME/.fundamental/fundamental.conf
-echo "addnode=35.231.22.84:32123"   >> /$HOME/.fundamental/fundamental.conf
-echo "addnode=35.196.232.0:32123"    >> /$HOME/.fundamentalfundamental.conf
-echo "addnode=45.77.154.184:32123" >> /$HOME/.fundamental/fundamental.conf
-echo "addnode=144.202.122.39:32123" >> /$HOME/.fundamental/fundamental.conf
-echo "addnode=178.128.179.143:32123" >> /$HOME/.fundamental/fundamental.conf
-echo "addnode=104.248.236.126:32123" >> /$HOME/.fundamental/fundamental.conf
-echo "addnode=68.183.107.253:32123" >> /$HOME/.fundamental/fundamental.conf
-echo "addnode=68.183.103.1604:32123" >> /$HOME/.fundamental/fundamental.conf
-echo "addnode=68.183.107.254:32123" >> /$HOME/.fundamental/fundamental.conf
-echo "addnode=144.202.72.255:32123" >> /$HOME/.fundamental/fundamental.conf
-echo "addnode=45.32.220.255:32123" >> /$HOME/.fundamental/fundamental.conf
+echo "addnode=35.231.22.84:22123"   >> /$HOME/.fundamental/fundamental.conf
+echo "addnode=35.196.232.0:22123"    >> /$HOME/.fundamentalfundamental.conf
+echo "addnode=45.77.154.184:22123" >> /$HOME/.fundamental/fundamental.conf
+echo "addnode=144.202.122.39:22123" >> /$HOME/.fundamental/fundamental.conf
+echo "addnode=178.128.179.143:22123" >> /$HOME/.fundamental/fundamental.conf
+echo "addnode=104.248.236.126:22123" >> /$HOME/.fundamental/fundamental.conf
+echo "addnode=68.183.107.253:22123" >> /$HOME/.fundamental/fundamental.conf
+echo "addnode=68.183.103.1604:22123" >> /$HOME/.fundamental/fundamental.conf
+echo "addnode=68.183.107.254:22123" >> /$HOME/.fundamental/fundamental.conf
+echo "addnode=144.202.72.255:22123" >> /$HOME/.fundamental/fundamental.conf
+echo "addnode=45.32.220.255:22123" >> /$HOME/.fundamental/fundamental.conf
 
 
 echo "Starting fundamental client";
