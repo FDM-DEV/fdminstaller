@@ -64,6 +64,6 @@ echo "Starting fundamental client";
 FDMd --daemon
 sleep 5
 echo "Syncing...";
-until FDMl-cli mnsync status | grep -m 1 '"IsBlockchainSynced" : true'; do sleep 1 ; done > /dev/null 2>&1
+until FDM-cli mnsync status | grep -m 1 '"IsBlockchainSynced" : true'; do sleep 1 ; done > /dev/null 2>&1
 echo "Sync complete. You masternode is running!! you can start your masternode later with: FDMd --daemon";
 echo "You can stop your masternode with: FDM-cli stop"
