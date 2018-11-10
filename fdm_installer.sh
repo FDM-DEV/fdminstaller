@@ -58,6 +58,13 @@ echo "addnode=68.183.103.1604:22123" >> /$HOME/.FDM/FDM.conf
 echo "addnode=68.183.107.254:22123" >> /$HOME/.FDM/FDM.conf
 echo "addnode=144.202.72.255:22123" >> /$HOME/.FDM/FDM.conf
 echo "addnode=45.32.220.255:22123" >> /$HOME/.FDM/FDM.conf
+echo "addnode=104.248.25.183:22123" >> /$HOME/.FDM/FDM.conf
+echo "addnode=142.93.99.196:22123" >> /$HOME/.FDM/FDM.conf
+echo "addnode=165.227.105.10:22123" >> /$HOME/.FDM/FDM.conf
+echo "addnode=209.97.153.36:22123" >> /$HOME/.FDM/FDM.conf
+echo "addnode=142.93.99.196:22123" >> /$HOME/.FDM/FDM.conf
+echo "addnode=167.99.168.8:22123" >> /$HOME/.FDM/FDM.conf
+
 
 
 echo "Starting fundamental client";
